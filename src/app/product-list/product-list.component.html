@@ -32,9 +32,13 @@
 @if (selectedProduct) {
   <app-product-detail
   [product]="selectedProduct"
-  (added)="onAdded()"
+  
+  (added)="onAdded($event)"
 ></app-product-detail>
-  <!-- <p>You selected:
+  <!-- 
+(added)="onAdded()"
+
+  <p>You selected:
     <strong>{{selectedProduct.title}}</strong>
   </p> -->
 }
